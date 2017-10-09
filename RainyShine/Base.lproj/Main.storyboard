@@ -87,7 +87,7 @@
                                 <rect key="frame" x="0.0" y="300" width="375" height="367"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="gDk-vj-m2c">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="80" id="gDk-vj-m2c">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gDk-vj-m2c" id="isp-0Y-qin">
@@ -141,7 +141,7 @@
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.8684199301725225" green="0.96348391558409341" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="backgroundColor" red="0.90363043364474471" green="0.96348391558409341" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
                                                 <constraint firstItem="ibn-rE-jZU" firstAttribute="leading" secondItem="gPy-SZ-WbM" secondAttribute="trailing" constant="8" id="11d-tz-5Ob"/>
                                                 <constraint firstItem="ibn-rE-jZU" firstAttribute="top" secondItem="isp-0Y-qin" secondAttribute="topMargin" constant="8" id="8kB-1H-td7"/>
@@ -152,6 +152,7 @@
                                                 <constraint firstItem="gPy-SZ-WbM" firstAttribute="leading" secondItem="isp-0Y-qin" secondAttribute="leadingMargin" id="p81-Es-PeV"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
