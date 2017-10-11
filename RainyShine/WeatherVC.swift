@@ -25,10 +25,11 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableview.dataSource = self
         
         currentWeather.downloadWeatherDetails {
-            //Set up UI to download data
+            self.updateMainUI()
         }
-        
+       
     }
+
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -43,6 +44,13 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func updateMainUI() {
+        dateLabel.text = currentWeather.date
+        currentTempLabel.text = "\(currentWeather.currentTemp)"
+        currentWeatherTypeLabel.text = currentWeather.weatherType
+        locationLabel.text = currentWeather.cityName
+        currentWeatherImage.image = UIImage(named: currentWeather.weatherType)
+    }
 
 
 }
