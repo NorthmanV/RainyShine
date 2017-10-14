@@ -60,7 +60,6 @@ class Forecast {
         if let weather  = weatherDict["weather"] as? [Dictionary<String, AnyObject>] {
             if let main = weather[0]["main"] as? String {
                 self._weatherType = main
-                print(self._weatherType)
             }
         }
         
